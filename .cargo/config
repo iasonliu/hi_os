@@ -1,2 +1,5 @@
 [build]
 target = ".cargo/x86_64-hi_os.json"
+
+[target.'cfg(target_os = "none")']
+runner = "bootimage runner"
